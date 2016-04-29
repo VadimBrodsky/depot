@@ -8,7 +8,21 @@ class Product < ActiveRecord::Base
               message: 'must be a URL for a GIF, JPG or PNG image.'
             }
 
+  has_many :line_items
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   def self.latest
     Product.order(:updated_at).last
+  end
+
+  private
+
+  def ensure_not_referenced_by_any_line_item
+    if line_items.empty?
+      true
+    else
+      errors.add(:base, 'Line Items present')
+      false
+    end
   end
 end
