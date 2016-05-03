@@ -1,5 +1,5 @@
 class OrderNotifier < ApplicationMailer
-  default from: 'Depot Store <depot@example.com'
+  default from: 'Depot Store <depot@example.com>'
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
