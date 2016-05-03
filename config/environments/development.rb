@@ -19,12 +19,12 @@ Rails.application.configure do
   # Add Gmail as the SMTP email server for development
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:        'smtp.gmail.com',
-    port:           587,
-    domain:         'domain.of.sender.net',
+    address:        ENV['EMAIL_ADDRESS'],
+    port:           ENV['EMAIL_PORT'],
+    domain:         ENV['EMAIL_DOMAIN'],
     authentication: 'plain',
-    user_name:      'user',
-    password:       'secret',
+    user_name:      ENV['EMAIL_USER'],
+    password:       ENV['EMAIL_PASSWORD'],
     enable_starttls_auto: true
   }
 
