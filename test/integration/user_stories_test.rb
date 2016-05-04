@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UserStoriesTest < ActionDispatch::IntegrationTest
-  fixtures :product
+  fixtures :products
 
   # A user goes to the index page. They select a product, adding it to their
   # cart, and check out, filling in their details on the checkout form. When
@@ -36,12 +36,12 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
     # Post order information
     post_via_redirect '/orders',
                       order: { name: 'Dave Thomas',
-                               address: '123 The Steet',
+                               address: '123 The Street',
                                email: 'dave@example.com',
                                pay_type: 'Check' }
     assert_response :success
     assert_template 'index'
-    cart = Card.find(session[:cart_id])
+    cart = Cart.find(session[:cart_id])
     assert_equal 0, cart.line_items.size
 
     # Check DB for orders
