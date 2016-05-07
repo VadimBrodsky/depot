@@ -51,4 +51,4 @@ es:
       body: 'Hay problemas con los siguintes campos:'
       header:
         one: "1 error h impedido que este %{model} se guarde"
-        other: "%{count} errores hn impedido que este ${model} se guarde"
+        other: "%{count} errores hn impedido que este %{model} se guarde"
