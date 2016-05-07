@@ -52,3 +52,4 @@ es:
       header:
         one: "1 error h impedido que este %{model} se guarde"
         other: "%{count} errores hn impedido que este %{model} se guarde"
+  thanks: 'Gracias por su pedido'
