@@ -1,4 +1,4 @@
-en:
+es:
   layouts:
     application:
       title: 'Publicaciones de Depot'
@@ -6,3 +6,7 @@ en:
       questions: 'Preguntas'
       news: 'Noticias'
       contact: 'Contacto'
+  store:
+    index:
+      title_html: "Su Cat&aacute;logo de Depot"
+      add_html: "A&ntilde;adir al Carrito"

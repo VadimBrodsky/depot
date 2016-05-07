@@ -6,3 +6,7 @@ en:
       questions: 'Questions'
       news: 'News'
       contact: 'Contact'
+  store:
+    index:
+      title_html: 'Your Depot Catalog'
+      add_html: 'Add to Cart'
