@@ -33,4 +33,10 @@ en:
       pay_type: 'Pay with'
       pay_prompt_html: 'Select a payment method'
       submit: 'Place Order'
+  errors:
+    template:
+      body: ''
+      header:
+        one: ""
+        other: ""
 
