@@ -10,3 +10,8 @@ es:
     index:
       title_html: "Su Cat&aacute;logo de Depot"
       add_html: "A&ntilde;adir al Carrito"
+  carts:
+    cart:
+      title: 'Carrito de la Compa'
+      empty: 'Vaciar Carrito'
+      checkout: 'Comprar'

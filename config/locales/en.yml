@@ -10,3 +10,8 @@ en:
     index:
       title_html: 'Your Depot Catalog'
       add_html: 'Add to Cart'
+  carts:
+    cart:
+      title: 'Your Cart'
+      empty: 'Empty cart'
+      checkout: 'Checkout'
